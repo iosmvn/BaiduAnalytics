@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<title>百度移动统计</title>
+
+	<script src="mobstat.js" ></script>
+	<style type="text/css">
+    body{
+        padding: 30px;
+    }
+    ol {
+        padding: 20px;
+        list-style-type:decimal;
+    }
+    
+    ol li {
+        line-height: 30px;
+        vertical-align:middle;
+    }
+
+	ol li a {
+		font-size: 18px;
+	}
+	</style>
+</head>
+<body>
+	<ol>
+		<li><a href="" onClick="BaiduMobStat.onPageStart('WebView');">onPageStart(String)</a></li>
+		<li><a href="" onClick="BaiduMobStat.onPageEnd('WebView');">onPageEnd(String)</a></li>
+		<li><a href="" onClick="BaiduMobStat.onEvent('event1', '自定义事件一');">onEvent(String, String)</a></li>
+		<li><a href="" onClick="BaiduMobStat.onEventStart('evnent2', '自定义事件二');">onEventStart(String, String)</a></li>
+		<li><a href="" onClick="BaiduMobStat.onEventEnd('event2', '自定义事件二');">onEventEnd(String, String)</a></li>
+		<li><a href="" onClick="BaiduMobStat.onEventDuration('event3', '自定义事件三', 1000);">onEventDuration(String, String, long)</a></li>
+	</ol>
+</body>
+</html>
